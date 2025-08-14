@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+
+}
+
+h1{
+    margin-top: 30px;
+    font-size: 2.5em;
+    color: orangered;
+
+}
+
+.solar-system{
+    position: relative;
+    width: 650px;
+    height: 650px;
+    margin: 40px auto;
+    /* align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px auto; */
+}
+
+.sun{
+    width: 90px;
+    height: 90px;
+    background: radial-gradient(circle, yellow, orange);
+    border-radius: 50%;
+    position: absolute;
+    top: 260px;
+    left: 260px;
+    z-index: 2;
+}
+
+
+.orbit{
+    position: absolute;
+    border-radius: 50%;
+    border: 10px dashed rgba(255, 255, 255, 0.5);
+    animation: rotate 15s linear infinite;
+    cursor: pointer;
+
+}
+
+.orbit::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+
+.mercury{
+    width: 100px;
+    height: 100px;
+    /* background-color: gray; */
+    /* position: absolute; */
+    top: 250px;
+    left: 250px;
+    /* border-radius: 50%; */
+}
+
+.venus{
+    width: 160px;
+    height: 160px;
+    /* background-color: #f0e68c; */
+    top: 220px;
+    left: 220px;
+}
+
+.earth{
+    width: 220px;
+    height: 220px;
+    /* background-color: #87ceeb; */
+    top: 190px;
+    left: 190px;
+}
+
+.mars{
+    width: 280px;
+    height: 280px;
+    /* background-color: #ff4500; */
+    top: 160px;
+    left: 160px;
+}
+
+.jupiter{
+    width: 340px;
+    height: 340px;
+    /* background-color: #d2691e; */
+    top: 130px;
+    left: 130px;
+}
+
+.saturn{
+    width: 400px;
+    height: 400px;
+    /* background-color: #deb887; */
+    top: 100px;
+    left: 100px;
+}
+
+ .uranus{
+    width: 460px;
+    height: 460px;
+    /* background-color: #add8e6; */
+    top: 70px;
+    left: 70px;
+}
+
+.neptune{
+    width: 520px;
+    height: 520px;
+    /* background-color: #4682b4; */
+    top: 40px;
+    left: 40px;
+}
+
+@keyframes rotate {
+    /* from {
+        transform: rotate(0deg);
+    } */
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.info-box{
+    background: #256;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    display: flex;
+
+}

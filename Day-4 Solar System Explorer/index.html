@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solar System Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Solar System Explorer</h1>
+    <div class="solar-system">
+        <div class="sun"></div>
+        <div class="orbit mercury" onclick="showInfo('Mercury')"></div>
+        <div class="orbit venus" onclick="showInfo('venus')"></div>
+        <div class="orbit earth" onclick="showInfo('Earth')"></div>
+        <div class="orbit mars" onclick="showInfo('Mars')"></div>
+        <div class="orbit jupiter" onclick="showInfo('Jupiter')"></div>
+        <div class="orbit saturn" onclick="showInfo('Saturn')"></div>
+        <div class="orbit uranus" onclick="showInfo('Uranus')"></div>
+        <div class="orbit neptune" onclick="showInfo('Neptune')"></div>
+   </div>
+
+        <div class="info-box" id="infoBox">
+            <h2 id="planetName">Planet Name</h2>
+            <p id="planetInfo">Click on a planet to learn more about it.</p>
+            <script src="script.js"></script>
+</body>
+</html>
